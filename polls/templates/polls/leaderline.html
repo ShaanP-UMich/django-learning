@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 
+{% load static %}
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
     <title>Document</title>
 </head>
 
 <body>
     <h1>Let's do some LeaderLine testing!</h1>
+
+    <span id="start" style="margin-right: 100px;">start</span>
+    <span id="end">end</span>
+
+    <div class="nodes-container">
+        <p id="node1" class="node">Climate Change</p>
+        <p id="node2" class="node">Evidence</p>
+        <p id="node3" class="node">Causes</p>
+        <p id="node4" class="node">Solutions</p>
+        <p id="node5" class="node">Further research</p>
+        <p id="node6" class="node">change human behavior</p>
+        <p id="node7" class="node">human activities</p>
+        <p id="node8" class="node">warming oceans</p>
+    </div>
 </body>
+
+<script src="{% static 'leader-line.min.js' %}"></script>
+<script src="{% static 'lines.js' %}"></script>
 
 </html>

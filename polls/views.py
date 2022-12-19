@@ -52,3 +52,6 @@ def vote(request, question_id):
 
 def leaderline(request):
     return render(request, 'polls/leaderline.html', {})
+
+def gojs(request):
+    return render(request, 'polls/conceptMap.html', {})
